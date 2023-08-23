@@ -51,9 +51,10 @@ public class FilmAdapter extends RecyclerView.Adapter<FilmAdapter.CardViewTassar
         //içersindeki bilgileri tasarıma yerleştirmek gerek bununla yapılır.bu method satır satır çalışır
       final FilmLer filmLer=fimlerList.get(position);
         holder.textViewFilmBaslik.setText(filmLer.getFilmBaslik());
-        holder.textViewFilmFiyat.setText(filmLer.getFilmFiyat()+" TL ");
         holder.imageViewFilmResim.setImageResource(context.getResources().
-                getIdentifier(filmLer.getFilmBaslik(),"drawable",context.getPackageName()));
+                getIdentifier(filmLer.getFilmResimAdi(),"drawable",context.getPackageName()));
+        holder.textViewFilmFiyat.setText(filmLer.getFilmFiyat()+" TL ");
+
         holder.buttonSepeteEkle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
