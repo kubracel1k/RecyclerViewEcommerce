@@ -24,6 +24,7 @@ import java.util.ArrayList;
     private TabLayout tablayout;
     private ViewPager2 viewpager2;
     private ArrayList<Fragment> fragmentListesi=new ArrayList<>();
+    private boolean deneme;
     private ArrayList<String> fragmentBaslikListesi=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
